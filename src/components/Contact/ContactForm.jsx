@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import toast from 'react-hot-toast';
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -29,6 +30,13 @@ const ContactForm = () => {
             }, (error) => {
                 console.error('Error al enviar el correo electrónico:', error.text);
             });
+
+            toast.success("Correo electrónico enviado correctamente")
+            setFormData({
+                name: '',
+                email: '',
+                message: ''
+            })
     };
 
 

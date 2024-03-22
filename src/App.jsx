@@ -9,12 +9,15 @@ import SobreMiSection from './components/sobreMi/SobreMiSection.jsx';
 import ContactSection from './components/Contact/ContactSection.jsx';
 import Footer from './components/footer/Footer.jsx';
 import { Helmet } from 'react-helmet';
+import { Toaster } from 'react-hot-toast';
+
+import WspLogo from './components/WspLogo/WspLogo.jsx';
 function App() {
 
 
   return (
     <>
-    
+      <Toaster position='top-right'/>
       <div id='inicio' className='max-w-[1080px]  p-4 sm:p-2 flex flex-col  mx-auto'>
         <Presentation />
         <div id='trabajos' className='mt-40 overflow-x-hidden'>
@@ -39,6 +42,7 @@ function App() {
         <div id='contact'>
           <ContactSection />
         </div>
+        <WspLogo/>
       </div>
     </>
   )
