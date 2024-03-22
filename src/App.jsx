@@ -10,21 +10,11 @@ import ContactSection from './components/Contact/ContactSection.jsx';
 import Footer from './components/footer/Footer.jsx';
 import { Helmet } from 'react-helmet';
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Alan Opresnik - Portfolio</title>
-        <meta name="description" />
-        <meta
-          name="description"
-          content="Portfolio de alan opresnik, software developer y UX/UI Designer"
-        />
-                <link rel="icon" href="/foto.jpg" />
-
-      </Helmet>
+    
       <div id='inicio' className='max-w-[1080px]  p-4 sm:p-2 flex flex-col  mx-auto'>
         <Presentation />
         <div id='trabajos' className='mt-40 overflow-x-hidden'>

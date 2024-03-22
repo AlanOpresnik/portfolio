@@ -67,8 +67,8 @@ export const cardDetails = {
 
 export default function Carousel() {
     return (
-        <div className="carousel-container  h-[60px]  md:h-[100px] p-1 flex justify-center top-[245px] items-center  bg-transparent absolute">
-            <div className="carousel-track">
+        <div className="carousel-container w-full h-[60px]  md:h-[100px] p-1 flex justify-center top-[245px] items-center  bg-transparent absolute">
+            <div className="carousel-track w-[150%]">
                 {Object.keys(cardDetails).map((detailKey) => {
                     return (
                         <CarouselItem

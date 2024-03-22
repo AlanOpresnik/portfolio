@@ -92,7 +92,7 @@ const WorksSection = () => {
                         ref={ref}
                         initial={{ opacity: 0, x: 70 }}
                         animate={isVisible ? { opacity: 1, x: 0 } : {}}
-                        transition={{ duration: 0.5, delay: 1 }}
+                        transition={{ duration: 0.5, delay: .5 }}
                         className='flex flex-col md:flex-row gap-0 mb-12 md:gap-6 hover:scale-95 transition-transform duration-300 max-w-[900px]  pb-12 md:pb-6'
                     >                      <div className='h-[270px] max-w-[960px] ronded'>
                             <img className='h-[250px] w-[480px] md:max-w-[400px] rounded-xl' src={"/robles.jpeg"} alt={"roblesrender.com imagen"} />
@@ -118,7 +118,7 @@ const WorksSection = () => {
                         ref={ref}
                         initial={{ opacity: 0, x: 70 }}
                         animate={isVisible ? { opacity: 1, x: 0 } : {}}
-                        transition={{ duration: 0.5, delay: 1 }}
+                        transition={{ duration: 0.5, delay: .5 }}
                         className='flex flex-col md:flex-row gap-0 mb-12 md:gap-6 hover:scale-95 transition-transform duration-300 max-w-[900px]  pb-12 md:pb-6'
                     >                      <div className='h-[270px] max-w-[960px] ronded'>
                             <img className='h-[250px] w-[480px] md:max-w-[400px] rounded-xl' src={"/portaflex.jpeg"} alt={"portaflex.com.ar imagen"} />
@@ -143,7 +143,7 @@ const WorksSection = () => {
                     ref={refTwo}
                     initial={{ opacity: 0, x: -70 }}
                     animate={isVisible ? { opacity: 1, x: 0 } : {}}
-                    transition={{ duration: 0.5, delay: 1 }}
+                    transition={{ duration: 0.5, delay: .5 }}
                     className='flex flex-col md:flex-row gap-0 mb-12 md:gap-6 hover:scale-95 w-full transition-transform duration-300 max-w-[900px]  pb-12 md:pb-6'
                 >                     <div className='h-[270px] flex justify-center ronded '>
                         <img className='h-[250px] w-[480px] md:max-w-[400px] rounded-xl  ' src={"/lorecunas.jpg"} alt={"lorecunas.com.ar imagen"} />
@@ -171,7 +171,7 @@ const WorksSection = () => {
                     ref={refTre}
                     initial={{ opacity: 0, x: -70 }}
                     animate={isVisible ? { opacity: 1, x: 0 } : {}}
-                    transition={{ duration: 0.5, delay: 1 }}
+                    transition={{ duration: 0.5, delay: .5 }}
                     className='flex -2 flex-col md:flex-row gap-0 mb-0 md:gap-6 hover:scale-95 w-full transition-transform duration-300 max-w-[900px]  pb-12 md:pb-6'
                 >                     <div className='h-[270px] flex justify-center ronded '>
                         <img className='h-[250px] w-[480px] md:max-w-[400px] rounded-xl  ' src={"/tuparaiso.jpeg"} alt={"tuparaiso.com imagen"} />

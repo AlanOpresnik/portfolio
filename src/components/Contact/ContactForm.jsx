@@ -17,16 +17,19 @@ const ContactForm = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        const recipient = 'matiroblesarq97@gmail.com';
-        emailjs.send('service_0q3f6uq', 'template_mxtkz87', formData, '8eUA_smTGCM9pjgiO',)
+        const templateParams = {
+            ...formData,
+            from_name: formData.name, // Utiliza el nombre del remitente proporcionado por el usuario
+            reply_to: formData.email // Utiliza la dirección de correo electrónico proporcionada por el usuario para la respuesta
+        };
+
+        emailjs.send('service_0q3f6uq', 'template_mxtkz87', templateParams, '8eUA_smTGCM9pjgiO')
             .then((result) => {
                 console.log('Correo electrónico enviado correctamente:', result.text);
             }, (error) => {
                 console.error('Error al enviar el correo electrónico:', error.text);
             });
     };
-
-
 
 
     return (
