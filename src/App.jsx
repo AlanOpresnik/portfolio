@@ -23,7 +23,7 @@ function App() {
 
         <Presentation />
         </div>
-        <div id='trabajos' className='mt-40 overflow-x-hidden'>
+        <div id='trabajos' className='mt-12 md:mt-40 overflow-x-hidden'>
           <WorksSection />
         </div>
         <div id='conocimientos' className='relative h-[290px] flex items-center gap-1'>
