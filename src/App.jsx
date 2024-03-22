@@ -18,8 +18,11 @@ function App() {
   return (
     <>
       <Toaster position='top-right'/>
-      <div id='inicio' className='max-w-[1080px]  p-4 sm:p-2 flex flex-col  mx-auto'>
+      <div className='max-w-[1080px]  p-4 sm:p-2 flex flex-col  mx-auto'>
+        <div id='inicio'>
+
         <Presentation />
+        </div>
         <div id='trabajos' className='mt-40 overflow-x-hidden'>
           <WorksSection />
         </div>

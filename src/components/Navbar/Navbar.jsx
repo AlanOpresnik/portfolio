@@ -27,7 +27,7 @@ const Navbar = () => {
     return (
         <div className={`flex justify-center pt-6 items-center w-full p-4 mb-12 md:mb-36 sticky top-0 z-50`} >
             <div
-                className={`w-[600px] h-[40px] p-2 flex justify-center items-center transition-colors duration-500 ${scrolled ? 'bg-[#f3f3f3d7] shadow-gray-300 shadow' : 'bg-transparent text-white'}  text-white  rounded-xl`}
+                className={`w-[600px] h-[40px] p-2 flex justify-center items-center transition-colors duration-500 ${scrolled ? 'bg-[#1F283A] shadow-gray-300 shadow' : 'bg-transparent text-white'}  text-white  rounded-xl`}
             >
                 <nav className="flex gap-8 justify-between">
                     {
