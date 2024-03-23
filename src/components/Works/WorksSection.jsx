@@ -74,9 +74,9 @@ const WorksSection = () => {
         }
     ]
     return (
-        <div className='mt-0 md:mt-12 relative'>
+        <section className='mt-0 md:mt-12 relative'>
             <div className='absolute w-[40px] h-full hidden md:block md:top-[-60px] left-1/2 right-1/2 z-40 transition-all' style={{ opacity: isVisibleGif ? 0 : 1 }}>
-                <img className='w-[60px] z-40 h-[40px]' src='/scroll.gif' alt="scroll" /> {/* Asegúrate de proporcionar un texto alternativo para la accesibilidad */}
+                <img className='w-[60px] animate-bounce z-40 h-[40px]' src='/scroll.avif' alt="scroll" /> {/* Asegúrate de proporcionar un texto alternativo para la accesibilidad */}
             </div>
             <div className='flex items-center'>
 
@@ -85,7 +85,7 @@ const WorksSection = () => {
             </div>
             <div id='worksSection' className='mt-6  w-full'>
 
-              
+
 
                 <Link to="https://roblesrender.com">
                     <motion.div
@@ -114,30 +114,30 @@ const WorksSection = () => {
                 </Link>
             </div>
             <Link to="https://portaflex.com.ar">
-                    <motion.div
-                        ref={ref}
-                        initial={{ opacity: 0, x: 70 }}
-                        animate={isVisible ? { opacity: 1, x: 0 } : {}}
-                        transition={{ duration: 0.5, delay: .5 }}
-                        className='flex flex-col md:flex-row gap-0 mb-12 md:gap-6 hover:scale-95 transition-transform duration-300 max-w-[900px]  pb-12 md:pb-6'
-                    >                      <div className='h-[270px] max-w-[960px] ronded'>
-                            <img className='h-[250px] w-[480px] md:max-w-[400px] rounded-xl' src={"/portaflex.jpeg"} alt={"portaflex.com.ar imagen"} />
+                <motion.div
+                    ref={ref}
+                    initial={{ opacity: 0, x: 70 }}
+                    animate={isVisible ? { opacity: 1, x: 0 } : {}}
+                    transition={{ duration: 0.5, delay: .5 }}
+                    className='flex flex-col md:flex-row gap-0 mb-12 md:gap-6 hover:scale-95 transition-transform duration-300 max-w-[900px]  pb-12 md:pb-6'
+                >                      <div className='h-[270px] max-w-[960px] ronded'>
+                        <img className='h-[250px] w-[480px] md:max-w-[400px] rounded-xl' src={"/portaflex.jpeg"} alt={"portaflex.com.ar imagen"} />
+                    </div>
+                    <div className=''>
+                        <h4 className='text-[1.7rem] text-white font-bold'>{"PortaFlex - Ecommerce"}</h4>
+                        <div className='flex gap-2 mb-3'>
+                            <Chip size='small' className='text-xs' label={"Next.js"} sx={{ backgroundColor: "#000", color: "white" }} variant="filled" />
+                            <Chip size='small' className='text-xs' label={"Tailwind CSS"} sx={{ backgroundColor: "#003159", color: "white" }} variant="filled" />
                         </div>
-                        <div className=''>
-                            <h4 className='text-[1.7rem] text-white font-bold'>{"PortaFlex - Ecommerce"}</h4>
-                            <div className='flex gap-2 mb-3'>
-                                <Chip size='small' className='text-xs' label={"Next.js"} sx={{ backgroundColor: "#000", color: "white" }} variant="filled" />
-                                <Chip size='small' className='text-xs' label={"Tailwind CSS"} sx={{ backgroundColor: "#003159", color: "white" }} variant="filled" />
-                            </div>
-                            <p>Ecommerce en el que trabaje  implementando pasarela de pagos con mercado pago y tarjeta de credito para Transferencias bancarias, tambien implemente un sistema de cupones para hacer descuentos de una cantidad determinada en el panel de adminsitracion, implemente un sistema de envios x codigo postal que suma el valor del envio a tu zona dependiendo tu codigo postal</p>
-                            <footer class="flex items-end justify-start mt-4 gap-x-4">
-                                <Link to="https://portaflex.com.ar" role="link" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black">  <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
-                                    Preview
-                                </Link>
-                            </footer>
-                        </div>
-                    </motion.div>
-                </Link>
+                        <p>Ecommerce en el que trabaje  implementando pasarela de pagos con mercado pago y tarjeta de credito para Transferencias bancarias, tambien implemente un sistema de cupones para hacer descuentos de una cantidad determinada en el panel de adminsitracion, implemente un sistema de envios x codigo postal que suma el valor del envio a tu zona dependiendo tu codigo postal</p>
+                        <footer class="flex items-end justify-start mt-4 gap-x-4">
+                            <Link to="https://portaflex.com.ar" role="link" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black">  <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                                Preview
+                            </Link>
+                        </footer>
+                    </div>
+                </motion.div>
+            </Link>
             <Link to="https://lorecunas.com.ar">
                 <motion.div
                     ref={refTwo}
@@ -193,7 +193,7 @@ const WorksSection = () => {
                     </div>
                 </motion.div>
             </Link>
-        </div>
+        </section>
 
     )
 }

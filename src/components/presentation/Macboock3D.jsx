@@ -35,7 +35,7 @@ export default function App() {
 
             <div className='relative flex justify-center  md:hidden h-[400px] w-full'>
                 <div className='mr-6 relative z-10 w-full'>
-                    <img className='mb-4 block md:hidden absolute top-[-120px]  h-[730px]  w-full object-cover md:mt-0 ' src='/3dMobile.png' />
+                    <img className='mb-4 block md:hidden absolute top-[-120px]  h-[730px]  w-full object-cover md:mt-0 ' src='/3dMobile.avif' />
                 </div>
             </div>
         </>

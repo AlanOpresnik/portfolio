@@ -6,7 +6,7 @@ import Carousel from '../autoPlayCarousel/Carousel'
 
 const PresentationCard = () => {
     return (
-        <div className='flex flex-col sm:flex-row'>
+        <header className='flex flex-col sm:flex-row'>
             <div>
                 <div className='mb-6 flex items-center gap-6'>
                     <Avatar sx={{ width: 66, height: 66 }}><img src='/foto.jpg' /></Avatar>
@@ -43,7 +43,7 @@ const PresentationCard = () => {
                 <Macboook3D />
             </div>
 
-        </div>
+        </header>
     )
 }
 

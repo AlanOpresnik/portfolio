@@ -3,9 +3,9 @@ import PresentationCard from './PresentationCard'
 
 const Presentation = () => {
   return (
-    <div>
+    <section>
       <PresentationCard/>
-    </div>
+    </section>
   )
 }
 

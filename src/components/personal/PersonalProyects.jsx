@@ -66,7 +66,7 @@ const PersonalProyects = () => {
                         transition={{ duration: 0.5, delay: 1 }}
                         className='flex flex-col md:flex-row gap-0  md:gap-6 hover:scale-95 transition-transform duration-300 max-w-[900px]  pb-12 md:pb-6'
                     >                      <div className='h-[270px] max-w-[960px] ronded'>
-                            <img className='h-[250px] w-[480px] md:max-w-[400px] rounded-xl' src={"/peronal1.jpeg"} alt={"pokemons.com imagen"} />
+                            <img className='h-[250px] w-[480px] md:max-w-[400px] rounded-xl' src={"/peronal1.avif"} alt={"pokemons.com imagen"} />
                         </div>
                         <div className=''>
                             <h4 className='text-[1.7rem] text-white font-bold'>{"Poke Api - Next.js static Paths"}</h4>
@@ -92,7 +92,7 @@ const PersonalProyects = () => {
                     transition={{ duration: 0.5, delay: 1 }}
                     className='flex -2 flex-col md:flex-row gap-0 mb-0 md:gap-6 hover:scale-95 w-full transition-transform duration-300 max-w-[900px]  pb-12 md:pb-6'
                 >                     <div className='h-[270px] flex justify-center ronded '>
-                        <img className='h-[250px] w-[480px] md:max-w-[400px] rounded-xl  ' src={"/personal4.jpeg"} alt={"tuparaiso.com imagen"} />
+                        <img className='h-[250px] w-[480px] md:max-w-[400px] rounded-xl  ' src={"/personal4.avif"} alt={"tuparaiso.com imagen"} />
                     </div>
                     <div className=''>
                         <h4 className='text-[1.7rem] text-white font-bold'>{`Movies app - based on Netflix`}</h4>
