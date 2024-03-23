@@ -39,7 +39,7 @@ const PresentationCard = () => {
                 </nav>
 
             </div>
-            <div className='items-center justify-center  flex mt-0 md:mt-[-20px] ml-0 md:ml-12  '>
+            <div className='items-center justify-center  w-auto md:w-[500px] flex mt-0 md:mt-[-20px] ml-0 md:ml-12  '>
                 <Macboook3D />
             </div>
 

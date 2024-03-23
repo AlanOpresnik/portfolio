@@ -24,11 +24,16 @@ export default function App() {
         <>
 
 
+            {!isMobile && (
+                <img
+                    className='mb-4 hidden md:block mt-12 mr-6 h-[480px] md:h-[400px] md:w-[600px] md:mt-0 '
+                    src='/ilsutracionhabitacion.png'
+                />
+            )}
 
-
-            <div className='relative flex justify-center   h-[400px] w-full'>
-                <div className='mr-6 relative z-10 w-[200px] h-[430px] '>
-                    <img className='mb-4 block   h-full  w-full object-cover md:mt-0 ' src='/3dMobile.avif' />
+            <div className='relative flex justify-center  md:hidden h-[400px] w-full'>
+                <div className='mr-6 relative z-10 w-full'>
+                    <img className=' block md:hidden mt-12     w-full object-cover md:mt-0 ' src='/ilsutracionhabitacion.png' />
                 </div>
             </div>
         </>
