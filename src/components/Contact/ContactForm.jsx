@@ -62,6 +62,7 @@ const ContactForm = () => {
                                     Nombre
                                 </label>
                                 <input
+                                required
                                     type="text"
                                     id="name"
                                     name="name"
@@ -79,6 +80,7 @@ const ContactForm = () => {
                                     Email
                                 </label>
                                 <input
+                                required
                                     type="email"
                                     id="email"
                                     name="email"
@@ -96,6 +98,7 @@ const ContactForm = () => {
                                     Mensaje
                                 </label>
                                 <textarea
+                                required
                                     id="message"
                                     name="message"
                                     onChange={handleInputChange}
