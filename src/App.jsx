@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import Presentation from './components/presentation/PresentationSection.jsx';
 import WorksSection from './components/Works/WorksSection.jsx';
 import Carousel from './components/autoPlayCarousel/Carousel.jsx';
@@ -8,7 +6,8 @@ import PersonalProyects from './components/personal/PersonalProyects.jsx';
 import SobreMiSection from './components/sobreMi/SobreMiSection.jsx';
 import ContactSection from './components/Contact/ContactSection.jsx';
 import Footer from './components/footer/Footer.jsx';
-import { Helmet } from 'react-helmet';
+import { Analytics } from "@vercel/analytics/react"
+
 import { Toaster } from 'react-hot-toast';
 
 import WspLogo from './components/WspLogo/WspLogo.jsx';
@@ -46,6 +45,7 @@ function App() {
           <ContactSection />
         </div>
         <WspLogo/>
+        <Analytics />
       </div>
     </>
   )

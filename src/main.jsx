@@ -18,6 +18,8 @@ import SobreMiSection from './components/sobreMi/SobreMiSection.jsx';
 import ContactSection from './components/Contact/ContactSection.jsx';
 import Footer from './components/footer/Footer.jsx';
 import { Helmet } from 'react-helmet';
+import { Analytics } from "@vercel/analytics/react"
+
 
 
 ReactDOM.render(
@@ -34,6 +36,8 @@ ReactDOM.render(
       </Route>
     </Routes>
     <Footer />
+    <Analytics />
+
   </Router>,
   document.getElementById('root')
 );
